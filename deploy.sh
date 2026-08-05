@@ -19,7 +19,7 @@ if [[ "#${CREATE_ENV_SYMLINK:-}" != "#" ]]; then
   ln -sf "$ENV_FILE_PATH"  "$ENV_SYMLINK_PATH"
 fi
 
-echo "Scrub files directory"
+echo "Scrub files directory..."
 FILES_PATH="${BUILD_PATH:-.}/web/sites/default/files/"
 rm -rf $FILES_PATH/.??* $FILES_PATH/*
 
