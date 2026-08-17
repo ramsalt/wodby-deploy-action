@@ -26,7 +26,7 @@ runs:
   steps:
   -
     name: download wodby-cli pinned to 1.0.1
-    command: |
+    run: |
       wget -qO- https://s3.amazonaws.com/wodby-releases/wodby-cli/1.0.1/linux/amd64/wodby-linux-amd64.tar.gz | sudo tar xz -C /usr/local/bin
     shell: bash
   -
